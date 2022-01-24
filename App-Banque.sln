@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1758
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App-Banque", "App-Banque\App-Banque.csproj", "{477162CD-6E0A-4353-A28A-ABECD6844E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBanqueLibdll", "AppBanqueLibdll\AppBanqueLibdll.csproj", "{7556BB92-4B8E-4589-968C-CAFA425A7D5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppBqnaue", "ConsoleAppBqnaue\ConsoleAppBqnaue.csproj", "{3E25BC27-CA86-4B1A-902F-892F4439925D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{477162CD-6E0A-4353-A28A-ABECD6844E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{477162CD-6E0A-4353-A28A-ABECD6844E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{477162CD-6E0A-4353-A28A-ABECD6844E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{477162CD-6E0A-4353-A28A-ABECD6844E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7556BB92-4B8E-4589-968C-CAFA425A7D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7556BB92-4B8E-4589-968C-CAFA425A7D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7556BB92-4B8E-4589-968C-CAFA425A7D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7556BB92-4B8E-4589-968C-CAFA425A7D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

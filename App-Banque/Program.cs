@@ -17,6 +17,7 @@ namespace App_Banque
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+           // App_interne.Run(new Form1());
         }
     }
 }
