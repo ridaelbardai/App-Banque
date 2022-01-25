@@ -8,15 +8,20 @@ namespace AppBanqueLibdll
 {
     public class Client
     {
-        private string nom, prenom, cin, login, passwd;
+        public string nom;
+        public string prenom;
+        public string photo;
+
+        private string  cin, login, passwd;
         private List<Compte> comptes;
-        public Client(string nom, string prenom, string cin, string login, string passwd)
+        public Client(string nom, string prenom, string cin, string login, string passwd,string photo)
         {
             this.nom = nom;
             this.prenom = prenom;
             this.cin = cin;
             this.login = login;
             this.passwd = passwd;
+            this.photo = photo;
             comptes = new List<Compte>();
         }
 

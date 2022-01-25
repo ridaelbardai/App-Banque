@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBanqueLibdll", "AppBanqu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppBqnaue", "ConsoleAppBqnaue\ConsoleAppBqnaue.csproj", "{3E25BC27-CA86-4B1A-902F-892F4439925D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppBanque", "WindowsFormsAppBanque\WindowsFormsAppBanque.csproj", "{92ED95D4-BD6A-4883-910B-BD341C651784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E25BC27-CA86-4B1A-902F-892F4439925D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92ED95D4-BD6A-4883-910B-BD341C651784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92ED95D4-BD6A-4883-910B-BD341C651784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92ED95D4-BD6A-4883-910B-BD341C651784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92ED95D4-BD6A-4883-910B-BD341C651784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
