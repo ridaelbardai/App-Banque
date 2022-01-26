@@ -32,5 +32,15 @@ namespace WindowsFormsAppBanque.Properties {
                 return ((string)(this["DB_CAT_RTConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Banque;Integrated Security=True")]
+        public string BanqueConnectionString {
+            get {
+                return ((string)(this["BanqueConnectionString"]));
+            }
+        }
     }
 }

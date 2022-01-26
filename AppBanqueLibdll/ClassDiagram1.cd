@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="AppBanqueLibdll.Client" Collapsed="true">
     <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -7,15 +7,15 @@
       <FileName>Client.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AppBanqueLibdll.Compte" Collapsed="true">
-    <Position X="2.75" Y="3" Width="1.5" />
+  <Class Name="AppBanqueLibdll.Compte">
+    <Position X="2.25" Y="3" Width="2.5" />
     <TypeIdentifier>
       <HashCode>BAACAAAAACAEAAAmDAAABAAAAAAAgAAgAAAAAACAIAA=</HashCode>
       <FileName>Compte.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AppBanqueLibdll.CompteCourant" Collapsed="true">
-    <Position X="2.75" Y="4.25" Width="1.5" />
+    <Position X="5.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CompteCourant.cs</FileName>
@@ -63,21 +63,21 @@
       <FileName>MAD.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AppBanqueLibdll.OperationR" Collapsed="true">
-    <Position X="7.75" Y="4" Width="1.5" />
+  <Class Name="AppBanqueLibdll.OperationR">
+    <Position X="7.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>OperationR.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AppBanqueLibdll.OperationV" Collapsed="true">
-    <Position X="10" Y="4" Width="1.5" />
+  <Class Name="AppBanqueLibdll.OperationV">
+    <Position X="10.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>OperationV.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AppBanqueLibdll.Transaction" Collapsed="true">
+  <Class Name="AppBanqueLibdll.Transaction">
     <Position X="9" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACgAAAAAABAAAgAAAAIAAAAACAAAAAAAAQAAAAA=</HashCode>

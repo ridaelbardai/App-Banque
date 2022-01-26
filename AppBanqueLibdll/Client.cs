@@ -12,7 +12,7 @@ namespace AppBanqueLibdll
         public string prenom;
         public string photo;
 
-        private string  cin, login, passwd;
+        public string  cin, login, passwd;
         private List<Compte> comptes;
         public Client(string nom, string prenom, string cin, string login, string passwd,string photo)
         {
