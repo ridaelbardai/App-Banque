@@ -69,7 +69,7 @@ namespace WindowsFormsAppBanque
                 IDbDataAdapter dabx = new SqlDataAdapter();
                 dabx.SelectCommand = cmd;
                 dabx.Fill(dsbx);
-                
+
                 this.bunifuDropdown1.DataSource = dsbx.Tables[0];
                 this.bunifuDropdown1.DisplayMember = "compte num";
                 this.bunifuDropdown1.ValueMember = "num";
@@ -82,26 +82,34 @@ namespace WindowsFormsAppBanque
             }
         }
 
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
 
         private void bunifuDropdown1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string strConnexion = @"Data Source=localhost;Initial Catalog=Banque;Integrated Security=True";
 
-            IDbConnection conn = new SqlConnection(strConnexion);
-            IDbCommand cmd = conn.CreateCommand();
-            string req = "";
-            cmd.CommandText = req;
-            cmd.CommandType = CommandType.Text;
-            DataSet ds = new DataSet();
-            IDbDataAdapter da = new SqlDataAdapter();
-            da.SelectCommand = cmd;
-            da.Fill(ds);
-            this.bunifuDataGridView2.DataSource = ds.Tables[0];
-            conn.Close();
+            try
+            {
+                string client = this.bunifuDropdown1.SelectedValue.ToString();
+                string strConnexion = @"Data Source=localhost;Initial Catalog=Banque;Integrated Security=True";
+
+                IDbConnection conn = new SqlConnection(strConnexion);
+                IDbCommand cmd = conn.CreateCommand();
+                string req = "select numero,date,montant,type from Transactions where client =" + client;
+                cmd.CommandText = req;
+                cmd.CommandType = CommandType.Text;
+                DataSet ds = new DataSet();
+                IDbDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(ds);
+                this.bunifuDataGridView2.DataSource = ds.Tables[0];
+                conn.Close();
+
+            }
+            catch (Exception exp)
+            {
+
+                Console.WriteLine("L'erreur suivante a été rencontrée :" + exp.Message);
+            }
         }
     }
 }
