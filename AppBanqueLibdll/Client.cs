@@ -11,7 +11,6 @@ namespace AppBanqueLibdll
         public string nom;
         public string prenom;
         public string photo;
-
         public string  cin, login, passwd;
         private List<Compte> comptes;
         public Client(string nom, string prenom, string cin, string login, string passwd,string photo)

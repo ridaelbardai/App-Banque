@@ -66,5 +66,10 @@ namespace WindowsFormsAppBanque
                 Console.WriteLine("L'erreur suivante a été rencontrée :" + exp.Message);
             }
         }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

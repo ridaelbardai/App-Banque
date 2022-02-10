@@ -31,14 +31,17 @@ namespace WindowsFormsAppBanque
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            this.bunifuPages1.SetPage("operations");
+            this.bunifuPages1.SetPage("historique");
 
+        }
+        private void bunifuButton4_Click(object sender, EventArgs e)
+        {
+            this.bunifuPages1.SetPage("operations");
         }
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'banqueDataSet.Compte'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            // TODO: cette ligne de code charge les données dans la table 'dB_CAT_RTDataSet.PRODUITS'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            
             string strConnexion = @"Data Source=localhost;Initial Catalog=Banque;Integrated Security=True";
             this.label1.Text = Login.clt.nom + " " + Login.clt.prenom;
 
@@ -73,6 +76,16 @@ namespace WindowsFormsAppBanque
                 this.bunifuDropdown1.DataSource = dsbx.Tables[0];
                 this.bunifuDropdown1.DisplayMember = "compte num";
                 this.bunifuDropdown1.ValueMember = "num";
+
+                IDbCommand cmdbx2 = con.CreateCommand();
+                string cmdreq2 = "";
+                cmdbx2.CommandText = cmdreq2;
+                cmdbx2.CommandType = CommandType.Text;
+                DataSet dsbx2 = new DataSet();
+                IDbDataAdapter da2 = new SqlDataAdapter();
+                da2.SelectCommand = cmdbx2;
+                da2.Fill(dsbx2);
+
                 con.Close();
 
             }
@@ -110,6 +123,21 @@ namespace WindowsFormsAppBanque
 
                 Console.WriteLine("L'erreur suivante a été rencontrée :" + exp.Message);
             }
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
